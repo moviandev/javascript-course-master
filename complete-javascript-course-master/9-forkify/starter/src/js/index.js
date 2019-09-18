@@ -7,7 +7,6 @@ const state = {};
 
 const ctrlSearch = async () => {
   const query = searchView.getInput();
-  console.log(query);
 
   if (query) {
     state.search = new SearchModel(query);
@@ -18,6 +17,11 @@ const ctrlSearch = async () => {
     clearLoad();
     searchView.renderResults(state.search.result);
   }
+};
+
+const ctrlRecipe = async () => {
+  const id = window.location.hash;
+  console.log(id);
 };
 
 elements.searchForm.addEventListener('submit', e => {
@@ -33,3 +37,5 @@ elements.searchResPages.addEventListener('click', e => {
     searchView.renderResults(state.search.result, goToPage);
   }
 });
+
+window.addEventListener('hashchange', ctrlRecipe);
