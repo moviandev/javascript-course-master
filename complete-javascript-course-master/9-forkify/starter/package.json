@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development"
   },
   "author": "Matheus Viana",
   "license": "ISC",
@@ -20,7 +20,9 @@
     "babel-preset-env": "1.6.1"
   },
   "dependencies": {
+    "axios": "0.18.0",
     "babel-polyfill": "6.26.0",
-    "axios": "0.18.0"
+    "fractional": "1.0.0",
+    "uniqid": "4.1.1"
   }
 }
