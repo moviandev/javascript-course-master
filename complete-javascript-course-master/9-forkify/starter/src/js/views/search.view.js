@@ -18,7 +18,7 @@ export const highlight = id => {
     .querySelector(`a[href="#${id}"]`)
     .classList.add('results__link--active');
 };
-const limitTitle = (title, limit = 20) => {
+export const limitTitle = (title, limit = 20) => {
   const newTitle = [];
   if (title.length > limit) {
     title.split(' ').reduce((acc, cur) => {
