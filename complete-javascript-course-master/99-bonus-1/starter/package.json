@@ -1,0 +1,11 @@
+{
+  "name": "laptopstore",
+  "version": "0.0.1",
+  "description": "This is a simple node App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Matheus Viana",
+  "license": "ISC"
+}
